@@ -1,0 +1,54 @@
+:root {
+  color: #142c36;
+  background: #f3f6f4;
+  font: 16px/1.55 "DM Sans", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.wrap { max-width: 850px; margin: auto; padding-inline: 24px; }
+.hero {
+  color: #fff;
+  background: radial-gradient(ellipse at 95% 130%, #0b617e, transparent 65%), #10323e;
+  border-bottom: 5px solid #f1cb76;
+  padding: 42px 0 36px;
+}
+.course { color: #ffe497; letter-spacing: .09em; font-size: .76rem; font-weight: 700; text-transform: uppercase; }
+.course span { padding-inline: .4em; }
+h1 { font: 700 clamp(2.35rem, 7vw, 4rem)/1.04 Georgia, serif; margin: .25em 0; letter-spacing: -.035em; }
+.intro { max-width: 520px; color: #edf7f7; margin-bottom: 0; }
+form { padding-top: 26px; }
+.identity, .terms { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.identity { grid-template-columns: 2fr 1fr; }
+label { display: block; font-weight: 650; }
+input, textarea {
+  width: 100%;
+  min-width: 0;
+  display: block;
+  margin-top: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  font-weight: 400;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #82999e;
+  border-radius: 7px;
+}
+textarea { resize: vertical; min-height: 74px; }
+:focus-visible { outline: 3px solid #0b617e; outline-offset: 3px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 20px 0; }
+a { color: #075773; font-weight: 700; text-underline-offset: 3px; }
+section { background: #fff; border: 1px solid #d6e1dd; border-radius: 14px; padding: clamp(16px, 4vw, 32px); margin-bottom: 20px; }
+h2 { margin: 0; font: 700 1.85rem/1.2 Georgia, serif; color: #103b4a; }
+h2 + p { color: #405961; margin: 6px 0 22px; }
+#questions label + label { margin-top: 20px; }
+.export { background: #e4efec; padding: 22px; border-radius: 12px; }
+button { background: #0b556e; color: #fff; border: 0; border-radius: 7px; padding: 12px 20px; font: inherit; font-weight: 750; cursor: pointer; }
+button:hover { background: #103b4a; }
+button:disabled { opacity: .7; }
+.export p { margin: 10px 0 0; }
+#status:empty { display: none; }
+footer { color: #405961; font-size: .875rem; margin: 26px 0; }
+@media (max-width: 560px) {
+  .wrap { padding-inline: 16px; }
+  .identity, .terms { grid-template-columns: 1fr; }
+}
